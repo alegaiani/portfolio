@@ -110,3 +110,9 @@ button {
         align-items: center;
     }
 }
+
+footer{
+    background-color: #007BFF;
+    padding: 10px;
+
+}
