@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Alessandra Gaiane</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="claro"> <!-- Por padrão, o tema será claro-->
+
+    <!-- Cabeçalho / Menu -->
+    <header>
+        <nav>
+            <div class="logo">Alessandra Gaiane</div>
+            <button class="menu-toggle">☰</button>
+            <ul class="menu">
+                <li><a href="#sobre">Sobre mim</a></li><!-- os # indicam o id da sessão que se deseja exibir, ao clicar, a página rolará 
+                autommaticamente  até a referida sessão-->
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><button id="tema-btn" title="Alternar entre tema claro/escuro">⏾</button></li><!-- Botão para alternância de temas-->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sobre mim -->
+    <section id="sobre">
+        <h1>Sobre mim</h1>
+        <div class="sobre-container">
+            <img src="img/ale.png" alt="Alessandra Gaiane" class="foto-perfil">
+            <div class="sobre-texto">
+                <p>Eu sou <strong>Alessandra Gaiane</strong>, técnica de planejamento, viajo o Brasil todo acompanhando 
+                    obras industriais (civil, mecânica ou elétrica). Além disso, sou entusiasta em tecnologia e estou caminhando 
+                    em direção à essa nova área.
+                    Adoro criar soluções práticas e eficientes, além de experimentar novos desafios.</p>
+                <p>Meus hobbies são caminhadas, trilhas, ouvir música, ler livros, assistir séries e viajar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formação -->
+    <section id="formacao">
+        <h1>Formação</h1>
+        <ul>
+            <li>Técnica em Mecânica Industrial</li>
+            <li>Bacharelado em Engenharia de produção</li>
+            <li>Tecnologia em Banco de Dados </li>
+        </ul>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio">
+        <h1>Portfólio</h1>
+        <ul>
+            <li><a href="temporario.html">Projeto Web de Cadastro Em PHP</a></li>
+            <li><a href="temporario.html">Sistema de Controle de Estoque Com Interface Web Usando Angular e Backend Em C#</a></li>
+            <li><a href="temporario.html">Portfolio Pessoal Utilizando HTML puro e javascript</a></li>
+        </ul>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h1>Contato</h1>
+        <form id="formContato">
+            <label for="nome">Nome:</label>
+            <!-- O atributo name geralmente 'lido pelo backend para capturar as informações digitadas' -->
+            <!-- O atributo "required" impede o evento "submit" caso o campo esteja em branco, tornando seu preenchimenyo obrigatório -->
+            <input type="text" id="nome" name="nome" required>
+            <!-- Ao especificar o tipo como "email", o próprio html impede o submit -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <!-- O botão do tipo submit sempre deve ficar dentro do formulário -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+<!-- importação do javascript no final da página para evitar possíveis quebras por código executado antes do carregamento da página -->
+    <script src="script.js"></script>
+</body>
+</html>
